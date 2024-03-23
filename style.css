@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.page {
+    width: 75rem;
+    margin: auto;
+}
+
+body {
+    background: #BFD7E4;
+    
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+body::before {
+    content: '';
+    background: #293241;
+
+    width: 100%;
+    height: 47rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+
+    margin-top: 10.7rem;
+}
+
+header h1 {
+    margin: auto;
+    width: 28.2rem;
+
+    font-family: "Staatliches", sans-serif;
+
+    font-size: 3.6rem;
+    color: #FFFFFF;
+}
+
+header p {
+    height: 4.6rem;
+    font-size: 1.6rem;
+
+    color: #FFFFFF;
+}
+
+header img {
+    margin-bottom: 3.2rem;
+}
+
+form {
+    background: white;
+    border-radius: 20px;
+
+    margin-bottom: 39.2rem;
+}
+
+
+.legend-wrapper {
+    height: 13.3rem;
+    border-radius: 2.0rem 2.0rem 0 0;
+    background: #F67669;
+
+    padding: 5.0rem 27.5rem;
+} 
+
+.legend-wrapper > legend {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+
+    color: white;
+}
+
+fieldset > legend {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    
+    color: #253B51;
+
+    width: 100%;
+    border-bottom: 1px solid #E6E6F0;
+
+    text-align: center;
+
+    margin-bottom: 3.2rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    border: none;
+}
+
+.fildset-wrapper, .email-wrapper, .infor, .fildset-wrapper-1 {
+    padding: 0 6.4rem;
+}
+
+.fildset-wrapper {
+    display: flex;
+    gap: 2.2rem;
+
+    margin-top: 3.2rem;
+}
+
+.input-wrapper {
+    width: 100%;
+}
+
+label {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #4E4958;
+}
+
+
+.input-wrapper input {
+    width: 100%;
+
+    border: 1px solid #E6E6F0;
+    border-radius: .8rem;
+    
+    padding-left: 2.4rem;
+
+    margin-top: .8rem;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 2.4rem;
+
+    height: 5.5rem;
+}
+
+.email-wrapper {
+    margin-top: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.email-wrapper span {
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+
+    color: #C1BCCC;
+}
+
+.input-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper-1 textarea{
+
+    height: 56px;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    
+    padding-left: 24px;
+
+    margin-top: 8px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #74707b;
+
+    height: 16.6rem;
+}
+
+
+.checkbox-wrapper {
+    position: relative;
+
+    margin-bottom: 3.6rem;
+  }
+  
+  .checkbox-wrapper input {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+  }
+  
+  .checkbox-wrapper label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .checkbox-wrapper label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+  
+    display: block;
+  }
+  
+  .checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  
+  }
+  
+  .checkbox-wrapper input:focus + label::before {
+    outline: 1px solid black;
+  }
+
+
+.col-3 {
+    display: flex;
+    gap: 20px;
+}
+  
+  .col-3 > div:nth-child(1) {
+    width: 100%;
+}
+
+.fildset-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.fildset-wrapper-1 legend {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+
+    color: #253B51;
+
+    width: 100%;
+    border-bottom: 1px solid #E6E6F0;
+
+    text-align: center;
+
+    margin-bottom: 3.1rem;
+}
+
+.button {
+    margin: auto;
+    width: 62.2rem;
+    height: 5.1rem;
+    background: #F67669;
+
+    padding: 1.5rem 4.0rem;
+
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: .8rem;
+
+    cursor: pointer;
+
+    margin-bottom: 6.4rem;
+}
+
+.button:hover {
+    background: #8b3f37;
+}
+
+
+
